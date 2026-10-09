@@ -1,0 +1,129 @@
+\documentclass[letter,10pt]{article}
+\usepackage[utf8]{inputenc}
+% \usepackage{CJKutf8} % not needed
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{btresume}
+
+
+%================================================================================
+%                                 CONTACT INFO
+%================================================================================
+\author{Isabella Tarantino}
+\def\city{Akita, Japan}
+\def\email{bellatarantino@msn.com}
+\def\website{bellatarantino.com}
+\def\github{bellatarantino} 
+\def\LinkedIn{isabella-tarantino} 
+
+\begin{document}
+%================================================================================
+%                                   HEADER
+%================================================================================
+\noindent
+	\begin{minipage}[t]{.25\textwidth}
+	\raggedright\vspace{0pt}
+	\href{mailto:\email}{\email} \\ % Email
+	\href{https://\website}{\website} % Website
+	\end{minipage}%
+	\begin{minipage}[t]{.5\textwidth}
+	\makeatletter
+	\centering\vspace{-2pt}{\huge \@author} \\[.1em]
+	{\city}
+	\makeatother
+	\end{minipage}%
+	\begin{minipage}[t]{.25\textwidth}
+	\raggedleft\vspace{0pt}
+	\href{https://github.com/\github}{GitHub: \github} \\% Github
+	\href{https://www.linkedin.com/in/\LinkedIn}{in/\LinkedIn} % LinkedIn
+	\end{minipage}
+	\vspace{-4pt}
+
+%================================================================================
+%                                  EDUCATION
+%================================================================================
+\section{Education}
+\subsection{{A.B. in Physics, Secondary Field in Computer Science}\hfill Sep 2020 -- May 2024}
+\subtext{Harvard University \hfill Cambridge, MA}
+\vspace*{\bullettop}
+GPA: 3.74/4.00 \quad $\cdot$ \quad Language Citation in Chinese \\
+Relevant courses: Data Science 1 \& 2, Applied Linear Algebra and Big Data, Intro to Probability, Discrete Mathematics
+
+%================================================================================
+%                                  EXPERIENCE
+%================================================================================
+\section{Work Experience}
+
+%========= JET ===========
+\subsection{{Assistant Language Teacher}\hfill Jul 2025 -- Present}
+\subtext{Japan Exchange and Teaching (JET) Program \hfill Yokote, Akita, Japan}
+\begin{zitemize}
+\item Serve as an English instructor at two rural Japanese senior high schools, planning and leading lessons, creating assignments, and providing evaluations.
+\item Teach classes for neurodiverse learners; collaborate with teachers on materials and curriculum.
+\item Coach students for speech contests, debates, and academic competitions; design cultural-exchange events.
+\end{zitemize}
+
+%========= Private tutor ===========
+\vspace*{\entrygap}
+\subsection{{Private Tutor}\hfill Sep 2020 -- Present}
+\subtext{Freelance; also Harvard Student Agencies (2020--22) and East End Tutors (2022) \hfill Hybrid}
+\begin{zitemize}
+\item Develop curricula and tutor students in mathematics, computer science, machine learning, and physics (grade school through college), adapting instruction for neurodiverse and non-native English-speaking learners.
+\end{zitemize}
+
+%========= NYC SBS ===========
+\vspace*{\entrygap}
+\subsection{{Strategy and Analytics Intern}\hfill Jun 2023 -- Aug 2023}
+\subtext{NYC Department of Small Business Services \hfill New York, NY}
+\begin{zitemize}
+\item Cleaned and geocoded data for thousands of businesses in the M/WBE (Minority and Women-Owned Business Enterprises) program using Python, Excel, QGIS, and the Google Geocoding API.
+\item Built visualizations and reports in Excel, Power BI, and Python used by government officials to monitor program success.
+\end{zitemize}
+
+%========= CERN ===========
+\vspace*{\entrygap}
+\subsection{{Research Assistant, ATLAS Experiment}\hfill Jun 2022 -- Aug 2022}
+\subtext{CERN \hfill Geneva, Switzerland}
+\begin{zitemize}
+\item Independently ran daily tests on the ATLAS New Small Wheel (NSW) and analyzed two months of results with PyROOT, NumPy, SciPy, and Matplotlib, producing status reports that informed labor and funding decisions across multiple teams.
+\end{zitemize}
+
+%========= Google STEP ===========
+\vspace*{\entrygap}
+\subsection{{STEP Intern}\hfill May 2021 -- Aug 2021}
+\subtext{Google, Chrome Web Store Team \hfill Remote (New York, NY)}
+\begin{zitemize}
+\item Planned and delivered three end-to-end features on an internal Chrome Web Store platform in a full-stack project using Kotlin, protocol buffers, gRPC, Guice, and Wiz.
+\item Wrote design documents and shipped production-ready code to a large codebase, incorporating feedback from code reviews.
+\end{zitemize}
+
+
+%================================================================================
+%                                  PROJECTS
+%================================================================================
+\section{Projects}
+
+\subsection{{Automated Worksheet Reader} \textmd{\textit{(\href{https://github.com/bellatarantino/scanner}{github.com/bellatarantino/scanner})}}\hfill Fall 2026 (in progress)}
+\begin{zitemize}
+\item Building a Python pipeline (OpenCV, PyMuPDF, pandas) that converts scanned paper post-lesson reflections into structured data, preserving pen-and-paper practice without manual data entry.
+\end{zitemize}
+
+\vspace*{\entrygap}
+\subsection{{Lesson Engagement Tracking} \textmd{\textit{(independent research)}}\hfill Fall 2026 (ongoing)}
+\begin{zitemize}
+\item Tracking engagement of $\sim$500 high school English learners across two schools in rural Japan, using worksheet-reader data and mixed-effects models (statsmodels); findings shared with JET Program supervisors to improve learning methods and track student progress.
+\end{zitemize}
+
+%================================================================================
+%                                  SKILLS
+%================================================================================
+\section{Skills}
+
+{\renewcommand{\arraystretch}{1.1}\begin{tabularx}{\textwidth}{p{11.2em} X}
+\skills{Programming} & Python, SQL, Java/Kotlin, JavaScript/TypeScript, HTML, Mathematica, \LaTeX \\
+\skills{Data Science \& ML} & pandas, NumPy, scikit-learn, Keras, TensorFlow, statsmodels, SciPy, Matplotlib, OpenCV \\
+\skills{Tools} & Git, Jupyter, Excel, Power BI, QGIS, Microsoft Dynamics \\
+\skills{Languages} & English (native), Mandarin Chinese (pre-advanced), Japanese (intermediate) \\
+\end{tabularx}}
+
+\end{document}

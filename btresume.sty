@@ -1,0 +1,60 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{btresume}[Bella's Resume Package]
+
+% Author: Timmy Chan
+% Modified by: bellatarantino (Oct 9, 2026)
+
+% FONTS
+\RequirePackage[T1]{fontenc} 
+\RequirePackage[12pt]{moresize}
+\RequirePackage{anyfontsize}
+\RequirePackage{csquotes}
+
+% SPACING 
+\newcommand{\sectionbefore}{0.9em}  % space above section titles
+\newcommand{\sectionafter}{0.35em}  % space below section titles
+\newcommand{\entrygap}{12pt}         % space between entries
+\newcommand{\bullettop}{2pt}        % space between entry header and bullets
+\newcommand{\bulletsep}{1.5pt}      % space between bullets
+
+% MARGINS AND SPACING
+\RequirePackage[margin=.6in, top=.55in, bottom=.55in]{geometry} 
+\raggedright % left align no indent
+\raggedbottom % top align no indent
+
+% COLOR
+\RequirePackage{xcolor}
+\definecolor{highlight}{RGB}{61, 90, 128} 
+
+% LINKS
+\RequirePackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=highlight}
+
+% BULLET POINTS
+\RequirePackage[inline]{enumitem}
+\setlength{\tabcolsep}{0in}
+
+% SECTION FORMATTING
+\RequirePackage[nostruts]{titlesec}
+\titlespacing*{\section}{0em}{\sectionbefore}{\sectionafter}
+\titleformat{\section}{\scshape \raggedright \large}{}{0em}{}[\vspace{0em}]
+
+% SUBSECTION FORMATTING
+\titlespacing*{\subsection}{0em}{0em}{0em} 
+\titleformat{\subsection}{\bfseries}{}{0em}{}[]
+
+% TEXT COMMANDS 
+\newcommand{\skills}[1]{ {\bfseries #1}}
+\newcommand{\subtext}[1]{\textit{#1}\par\vspace{0em}}
+
+% ITEMIZE SPACING
+\setlist[itemize]{align=parleft,left=0pt..1em,topsep=\bullettop}
+\newenvironment{zitemize}{
+\begin{itemize} \itemsep \bulletsep \parskip 0pt \parsep 1pt}
+{\end{itemize}\vspace{-.5em}}
+
+\pagenumbering{gobble}
+
+\RequirePackage[english]{babel}
+
+\endinput
