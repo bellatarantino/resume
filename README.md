@@ -11,7 +11,6 @@
 <p>
   <a href="mailto:bellatarantino@msn.com">bellatarantino@msn.com</a>&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://bellatarantino.com">bellatarantino.com</a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/bellatarantino">GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://www.linkedin.com/in/isabella-tarantino">LinkedIn</a>
 </p>
 
